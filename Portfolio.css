@@ -68,7 +68,7 @@ body{
 
 .home{
     display: flex;
-    margin: 2rem;
+    padding: 2rem;
     align-items: center;
     height: 100vh;
 }
@@ -79,7 +79,7 @@ body{
 
 .intro{
     margin: 2rem;
-    width: 50%;
+    width: 100%;
 }
 
 .profile{
@@ -279,6 +279,41 @@ body{
         margin-left: 3rem;
     }
 
+    .home{
+        flex-direction: column;
+        margin-top: 2rem;
+        max-height: 100%;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+    }
+
+    .card{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .profile{
+    height: 15rem;
+    width: 15rem;
+    margin: rem;
+    border-radius: 10rem;
+    box-shadow: 3px 3px 3px 3px aqua;
+    }
+
+    .aboutpic{
+    height: 15rem;
+    width: 15rem;
+    margin: 1rem;
+    border-radius: 10rem;
+    box-shadow: 0px 0 50px aqua;
+    }
+
+    .greetings{
+        font-size: 20px;
+    }
+
 
 
 
@@ -294,4 +329,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 70%;
+    }
 }
