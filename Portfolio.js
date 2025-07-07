@@ -1,11 +1,11 @@
 // toggle nav bar
 
 let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar')
+let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = ()=>{
     menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active')
+    navbar.classList.toggle('active');
 }
 
 // ********************Sticky Nav Bar*************
@@ -32,12 +32,12 @@ var about = new Typed('.aboutme',{
 
 
 window.onscroll = ()=>{
-    document.querySelector('.show').textContent = 'Scroll : ' + window.scrollY
+    document.querySelector('.show').textContent = 'Scroll : ' + window.scrollY;
 }
 
 
-let sections = document.querySelectorAll('section')
-let navLinks = document.querySelectorAll('header nav a')
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
     sections.forEach(sec =>{
@@ -57,6 +57,6 @@ window.onscroll = () => {
     header.classList.toggle('sticky',window.scrollY > 100);
 
     menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active')
+    navbar.classList.remove('active');
 
 }
