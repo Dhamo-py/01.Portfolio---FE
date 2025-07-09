@@ -20,7 +20,7 @@ var typed = new Typed('.role',{
     backSpeed:100,
     loop: true,
     cursorChar: '.',
-})
+});
 
 var about = new Typed('.aboutme',{
     strings:['About Me'],
@@ -28,7 +28,7 @@ var about = new Typed('.aboutme',{
     typeSpeed:1000,
     backSpeed:100,
 
-})
+});
 
 
 window.onscroll = ()=>{
@@ -49,7 +49,7 @@ window.onscroll = () => {
         if(top >= offset && top < offset+height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('header nav a[href*="' + id + '"').classList.add('active');
+                document.querySelector('header nav a[href*='  + id + '').classList.add('active');
             })
         }
     })
@@ -60,3 +60,19 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 
 }
+
+window.onload = () => {
+  document.getElementById('preloader').style.display = 'none';
+};
+
+ScrollReveal({
+    reset:true,
+    distance:'80px',
+    duration:2000,
+    delay:25,
+});
+
+ScrollReveal().reveal('.greetings, .name,.iam,.aboutpara h1,.aboutpara h3,.service-heading', {origin: 'top'});
+ScrollReveal().reveal('.profile,.aboutpara p,.servicecard', {origin: 'bottom'});
+ScrollReveal().reveal('.home p,.aboutpic,.portfolio-heading,.footer p', {origin: 'left'});
+ScrollReveal().reveal('.social,.portfolio-card, .footer a', {origin: 'right'});
