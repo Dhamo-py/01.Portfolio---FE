@@ -70,7 +70,8 @@ body{
     display: flex;
     padding: 2rem;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    min-width: 100vh;
 }
 
 .role{
@@ -133,7 +134,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--sec-bg-color);
-    height: 100vh;
+    min-width: 100vh;
     width: 100vw;
 
 
@@ -161,8 +162,9 @@ body{
 }
 
 .ourservices{
-    padding-top: 6rem;
-    height: 100vh;
+    margin-top: 6rem;
+    min-width: 100vh;
+    width: 100vw;
 }
 
 .service-heading{
@@ -214,6 +216,71 @@ body{
     font-size: 30px;
 }
 
+.portfolio-card{
+    height: 16rem;
+    width: 20rem;
+    /* padding: 10rem; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.port{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.portfolio-title{
+    /* display: flex;
+    flex-direction: column; */
+    width: 15rem;
+}
+
+.portfolio-heading{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.portfolio-pic{
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    box-shadow: 0 0 50px aqua;
+}
+
+.portfolio{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 6rem;
+
+}
+
+.description:hover .portfolio-title .portfolio-summary {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 20rem;
+    margin: 2rem;
+    box-shadow: 0 0 50px aqua; */
+    opacity: 1;
+}
+
+.description{
+    opacity: 0;
+    position: absolute;
+}
+
+
+
+
 
 @media(max-width:903px){
     html{
@@ -239,7 +306,7 @@ body{
     align-items: center;
     height: 20rem;
     width: 20rem;
-    margin: 2rem;
+    /* margin: 2rem; */
     border-radius: 3rem;
     background-color: var(--sec-bg-color);
     /* overflow: scroll; */
@@ -281,8 +348,11 @@ body{
 
     .home{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 2rem;
-        max-height: 100%;
+        min-width: 100vh;
+
     }
 
     .about{
@@ -314,9 +384,7 @@ body{
         font-size: 20px;
     }
 
-
-
-
+    
 
 }
 
@@ -330,17 +398,9 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+/* 
 @media (max-width:450px){
     html{
         font-size: 70%;
     }
-    .home{
-        flex-direction: column;
-        margin-top: 2rem;
-        max-height: 100%;
-    }
-    .about{
-        flex-direction: column-reverse;
-    }
-}
+} */
